@@ -5,9 +5,9 @@ $second-color: #ff5656
   &:hover
     background-image: none
     background-color: $main-color
-  
+
   *
-  font-family: Roboto, sans-serif
+    font-family: Roboto, sans-serif
 
 header
   position: relative
@@ -21,7 +21,7 @@ nav
   background-color: #212121
   position: fixed
   width: 100%
-  z-index: 1
+  z-index: 4
 
 .menu
   display: flex
@@ -141,45 +141,46 @@ nav
     +btn_hover
 
 .label
-  &_white
-    background-color: #FFF
-    color: black
-    z-index: 2
-    position: relative
   color: #FFF
+  background-color: black
+  z-index: 2
+  position: relative
   font-size: 11px
   font-weight: 400
   text-transform: uppercase
   width: 113px
   height: 24px
-  background-color: black
   margin: 0 auto
   display: flex
   align-items: center
   justify-content: center
+  &_white
+    background-color: #FFF
+    color: black
 
 .title
-  &_white
-    color: #FFF
-    z-index: 2
-    position: relative
-  margin-top: 38px
   color: #222
+  z-index: 2
+  position: relative
+  margin-top: 38px
   text-align: center
   font-size: 38px
   font-weight: 700
   text-transform: uppercase
 
-.subtitle
   &_white
     color: #FFF
-    z-index: 2
-    position: relative
-  margin-top: 19px
+
+.subtitle
   color: #222222
+  z-index: 2
+  position: relative
+  margin-top: 19px
   font-size: 17px
   font-weight: 400
   text-align: center
+  &_white
+    color: #FFF
 
 .reasons
   padding: 20px 0 64px 0
@@ -217,7 +218,7 @@ nav
       font-weight: 300
       line-height: 21px
 
-.mobile 
+.mobile
   min-height: 864px
   padding: 48px 0 79px 0
   .row
@@ -305,7 +306,7 @@ nav
     left: 0
     background-color: #070716
     // z-index: 1
-    
+
 .require
   padding: 68px 0 84px 0
   &_block
@@ -349,3 +350,77 @@ nav
       li
         &:before
           background: url('../icons/check_red.svg') center (center / cover) no-repeat
+
+.world
+  min-height: 720px
+  background: url('../img/world_bg.jpg') center (center / cover) no-repeat
+  padding: 49px 0
+  position: relative
+  &_link
+    color: #1FBAD6
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    &:hover
+      text-decoration: none
+      color: #fff
+
+footer
+  min-height: 160px
+  .divider
+    width: 300px
+    height: 6px
+    background-color: #1FBAD6
+    margin: 12px auto 0 auto
+  .footer_social
+    display: flex
+    width: 155px
+    justify-content: space-between
+    top: 48px
+    left: 23px
+    position: relative
+    .social_wrap
+      background-color: black
+      width: 35px
+      height: 35px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 100%
+.footer
+  position: relative
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+    &_sub
+      display: flex
+      justify-content: space-between
+      a
+        margin-top: 13px
+        color: #999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+    &_lang
+      color: #1FBAD6
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      margin-top: 15px
+      display: block
+      text-align: center
+  &_mobile
+    position: absolute
+    right: 20px
