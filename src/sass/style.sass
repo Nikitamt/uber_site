@@ -369,36 +369,110 @@ nav
       text-decoration: none
       color: #fff
 
+// footer
+//   min-height: 160px
+//   .footer_social
+//     display: flex
+//     width: 155px
+//     justify-content: space-between
+//     top: 48px
+//     left: 23px
+//     position: relative
+//     .social_wrap
+//       background-color: black
+//       width: 35px
+//       height: 35px
+//       display: flex
+//       justify-content: center
+//       align-items: center
+//       border-radius: 100%
+// .footer
+//   // &_wrapper
+// 	// 	display: flex 
+// 	// 	justify-content: space-between
+// 	// 	align-items: flex-start
+// 	// 	padding-top: 32px
+//   &_divider
+//     width: 300px
+//     height: 6px
+//     background-color: #1FBAD6
+//     margin: 12px auto 0 auto
+//   &_links
+//     width: 390px
+//     margin: 0 auto
+//     &_main
+//       display: flex
+//       justify-content: space-between
+//       padding: 0 10px
+//       a
+//         color: #070716
+//         font-size: 15px
+//         font-weight: 300
+//         text-transform: uppercase
+//     &_sub
+//       display: flex
+//       justify-content: space-between
+//       a
+//         margin-top: 13px
+//         color: #999
+//         font-size: 11px
+//         font-weight: 300
+//         text-transform: uppercase
+//     &_lang
+//       color: #1FBAD6
+//       font-size: 11px
+//       font-weight: 400
+//       text-transform: uppercase
+//       margin-top: 15px
+//       display: block
+//       text-align: center
+//   &_mobile
+//     position: absolute
+//     right: 20px
+
 footer
-  min-height: 160px
-  .divider
-    width: 300px
-    height: 6px
-    background-color: #1FBAD6
-    margin: 12px auto 0 auto
-  .footer_social
+  padding: 14px 23px 39px 23px
+  a
+    &:hover
+      text-decoration: none
+.footer
+  &_divider
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+    margin: 0 auto
+  &_wrapper
     display: flex
-    width: 155px
+    // justify-content: space-between
+    // align-items: flex-start
+    padding-top: 32px
+  &_wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_social
+    width: 160px
+    display: flex
     justify-content: space-between
-    top: 48px
-    left: 23px
-    position: relative
-    .social_wrap
-      background-color: black
-      width: 35px
-      height: 35px
+    &_item
       display: flex
       justify-content: center
       align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
       border-radius: 100%
-.footer
-  position: relative
+      i
+        color: #fff
   &_links
     width: 390px
     margin: 0 auto
     &_main
       display: flex
       justify-content: space-between
+      padding: 0 10px
       a
         color: #070716
         font-size: 15px
@@ -407,20 +481,18 @@ footer
     &_sub
       display: flex
       justify-content: space-between
+      margin-top: 10px
       a
-        margin-top: 13px
-        color: #999
+        color: #999999
         font-size: 11px
         font-weight: 300
         text-transform: uppercase
     &_lang
-      color: #1FBAD6
+      display: block
+      margin: 0 auto
+      color: #1fbad6
       font-size: 11px
       font-weight: 400
+      margin-top: 19px
       text-transform: uppercase
-      margin-top: 15px
-      display: block
       text-align: center
-  &_mobile
-    position: absolute
-    right: 20px
