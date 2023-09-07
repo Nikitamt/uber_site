@@ -38,6 +38,38 @@
   .world
     min-height: 700px
 
+  // footer
+  //   padding: 11px 0 25px 0
+  // .footer
+  //   &_wrapper
+  //     padding-top: 25px
+  //     >div
+  //       width: 40%
+  //   &_social
+  //     width: 155px
+  //   &_links
+  //     &_sub
+  //       margin-top: 8px
+  //   &_mobile
+  //     img
+  //       width: 265px
+
+  .footer
+    &_wrapper > div
+      width: 50%
+      &:nth-child(1)
+        width: 25%
+      &:nth-child(3)
+        width: 25%
+        display: flex
+        justify-content: flex-end
+    &_mobile
+      display: flex
+      a
+        margin: 0 3px
+        img
+          width: 100%
+
 @media (max-width: 991.5px)
   .menu
     &_item
@@ -70,6 +102,62 @@
       margin-right: 0
     &_descr
       margin-top: 20px
+  .mobile
+    padding-bottom: 50px
+    &_item
+      width: 220px
+      height: 265px
+      &_subtitle
+        font-size: 17px
+  .choice
+    &_img
+      width: 100%
+  .require
+    padding-bottom: 60px
+    &_title
+      font-size: 21px
+    &_list
+      width: 370px
+    &_descr
+      font-size: 16px
+    &_block
+      margin-bottom: 0
+  .world
+    min-height: 680px
+    padding: 38px 0
+    .title
+      margin-top: 30px
+    .subtitle
+      margin-top: 10px
+      font-size: 15px
+    &_link
+      font-size: 14px
+      bottom: 40px
+  // .footer
+  //   &_mobile
+  //     .mobile_stores
+  //       margin-top: 70px
+  //       margin-right: 10px
+  //   &_social
+  //     margin-top: 70px
+  //     margin-left: 10px
+  //   &_links
+  //     &_main
+  //       width: 370px
+
+  .footer
+    &_wrapper
+      flex-wrap: wrap
+    &_wrapper > div
+      width: 100%
+      display: flex
+      justify-content: center
+      margin-bottom: 20px
+      &:nth-child(1)
+        width: 100%
+      &:nth-child(3)
+        width: 100%
+        justify-content: center
 
 @media (max-width: 767px)
   .menu
@@ -141,6 +229,15 @@
   .reasons
     &_descr
       text-align: center
+  .choice
+    min-height: 486px
+    background: none
+    padding-bottom: 0
+  // footer
+  //   .footer
+  //     &_wrapper
+  //       >div
+  //         width: 33%
 
 @media (max-width: 575px)
   nav
@@ -164,6 +261,8 @@
       height: 22px
       font-size: 10px
       margin-top: 6px
+      &:hover
+        background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
   .promo
     min-height: 400px
     padding: 93px 0 35px 0
@@ -182,8 +281,16 @@
       width: 210px
       height: 50px
       margin-top: 72px
+      &:hover
+        background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
   .menu
     width: 85%
+    &_item
+      width: 100%
+      text-align: center
+      padding: 5px 0
+    &_link
+      display: block
   .reasons
     padding: 22px 0 36px 0
     &_block
@@ -200,3 +307,76 @@
     font-size: 16px
     margin-top: 15px
     line-height: 16px
+  .subtitle
+    text-align: center
+    font-size: 14px
+    font-weight: 400
+    line-height: 21px
+  .mobile
+    &_item
+      width: 290px
+      height: 254px
+  .hidden_575px
+    display: none
+  .choice
+    min-height: 393px
+    padding: 26px 0 31px 0
+    .black
+      z-index: -1
+      height: 100%
+    &_descr
+      &_white
+        color: white
+  .require
+    padding-top: 24px
+    padding: 24px 0 30px 0
+    &_title
+      font-size: 16px
+    &_list
+      width: 100%
+      padding-left: 32px
+      margin-top: 0
+      li
+        font-size: 14px
+        margin-bottom: 0
+    &_descr
+      font-size: 14px
+      margin-top: 15px
+  .world
+    min-height: 360px
+    padding: 26px 0
+    // background-size: auto 360px
+    .title
+      margin-top: 14px
+    .subtitle
+      font-size: 14px
+    &_link
+      width: 181px
+  footer
+    padding: 25px 0 20px 0
+  .footer
+    &_divider
+      width: 253px
+      margin: 0 auto
+    &_wrapper
+      padding-top: 22px
+    &_wrapper > div
+      margin-bottom: 20px
+      &:nth-child(1)
+        order: 2
+      &:nth-child(2)
+        order: 1
+      &:nth-child(3)
+        order: 3
+    &_links
+      width: 290px
+      &_main
+        padding: 0
+        font-size: 14px
+      &_sub
+        flex-wrap: wrap
+        justify-content: center
+        a
+          margin: 0 7px
+      &_lang
+        margin-top: 10px
